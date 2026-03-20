@@ -34,31 +34,41 @@ To write a Python program to perform addition and division operations using a cl
 
 ### PROGRAM
 
+```
+class cse:
+def mul(self,a,b):
+self.a=a
+self.b=b
+print("Result: ",a*b)
+def div(self,a,b):
+self.a=a
+self.b=b
+print("Result: ",a//b)
+
+z=cse()
+a=int(input())
+b=int(input())
+q=False
+while q==False:
+x=int(input())
+if x==1:
+z.mul(a,b)
+elif x==2:
+z.div(a,b)
+elif x==0:
+print("Exiting!")
+q=True
+break;
+else:
+print("Invalid choice")
+q=True
+break;
+
 
 ```
-
-#Reg.no: 212222060051
-#Name: Dhivyadharshini S
-
-from collections import defaultdict
-def create_file(file_path, content):
-    with open(file_path, 'w') as file:
-        file.write(content)
-def char_frequency(file_path):
-    char_count=defaultdict(int)
-    with open(file_path, 'r')as file:
-        content=file.read()
-        for char in content:
-           char_count[char]+=1
-    return char_count
-
-```
-
 
 ### OUTPUT
-
-<img width="815" height="258" alt="image" src="https://github.com/user-attachments/assets/6081dffa-e9fe-4bbf-accf-4450c7a1a832" />
-
+![image](https://github.com/user-attachments/assets/1a4d292e-d649-4270-8acc-11169ffe9ef4)
 
 ### RESULT
-Thus a Python program that reads a file and counts the frequency of each character in it are verified.
+Thus the Python program to perform addition and division operations using a class. The class should be named Saveetha, and the function names should be setvalues (to set a and b values), add, and div is successfully implemented and executed.
